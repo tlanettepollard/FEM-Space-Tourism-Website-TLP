@@ -4,9 +4,9 @@ import React from 'react';
 
 export default function Home() {
     return (
-        <section className='h-screen w-screen'>
-            <div className="App mx-auto h-full bg-home-mobile md:bg-home-tablet xl:bg-home-desktop bg-cover bg-no-repeat">
-                
+        <section>
+            <div>
+                <h1>Hi Trista</h1>
             </div>
         </section>
     );
