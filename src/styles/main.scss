@@ -1,12 +1,17 @@
 // Abstracts
+@import './abstracts/mixins';
 @import './abstracts/variables';
 
 // Base
+@import './base/base';
 @import './base/typography';
 
 // Components
 
 // Layout
+
+// Pages
+@import './pages/home';
 
 // Vendors
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
