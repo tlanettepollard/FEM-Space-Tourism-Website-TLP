@@ -4,10 +4,12 @@ import React from 'react';
 
 export default function Home() {
     return (
-        <section>
-            <div>
-                <h1>Hi Trista</h1>
-            </div>
-        </section>
+        <main className='main vh-100'>
+            <section>
+                <div>
+                    <h1>Hi Trista</h1>
+                </div>
+            </section>
+        </main>
     );
 }
