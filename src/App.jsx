@@ -1,14 +1,16 @@
-import { useState } from 'react';
+import React from 'react';
 
 
 const App = () => {
-  const [count, setCount] = useState(0);
+
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Hello</h1>
-      </header>
+    <div className='h-screen w-screen'>
+      <div className="App mx-auto h-full bg-home-mobile md:bg-home-tablet xl:bg-home-desktop bg-cover bg-no-repeat">
+        <header className="App-header">
+          <h1 className='text-3xl text-ebony font-bold underline font-serif uppercase'>Hello Trista</h1>
+        </header>
+      </div>
     </div>
   );
 };
