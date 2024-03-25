@@ -1,16 +1,16 @@
 import React from 'react';
-import { Nav, Container, Navbar, NavbarBrand, NavbarCollapse, NavbarToggle, Offcanvas } from 'react-bootstrap';
+import { Nav, Container, Navbar, NavbarBrand, NavbarToggle, Offcanvas } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 
 export default function Header() {
     return (
         <>
-            {[false].map((expand) => (
+            {[false].map((expand, idx) => (
                 <header className='bg-transparent'>
-                    <Navbar key={expand} expand={expand} className='bg-transparent mb-3 navbar-expand-md'>
+                    <Navbar key={idx} expand={expand} className='bg-transparent mb-3 navbar-expand-md navbar-dark'>
                         <Container fluid>
                             <Navbar.Brand href='#'>
-                                <img src="/public/assets/shared/logo.svg" alt="company logo" />
+                                <img src="/assets/shared/logo.svg" alt="company logo" />
                             </Navbar.Brand>
                             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
                             <Navbar.Offcanvas id={`offcanvasNavbar-expand-${expand}`} className='bg-dark' aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`} placement='end'>
