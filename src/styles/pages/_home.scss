@@ -1,14 +1,14 @@
 .main {
-    background-image: url('/public/assets/home/background-home-mobile.jpg');
+    background-image: url('/assets/home/background-home-mobile.jpg');
     background-size: cover;
     background-position: center;
 
     @include bp-tablet-up {
-        background-image: url('/public/assets/home/background-home-tablet.jpg');
+        background-image: url('/assets/home/background-home-tablet.jpg');
     }
 
     @include bp-lg-up {
-        background-image: url('/public/assets/home/background-home-desktop.jpg');
+        background-image: url('/assets/home/background-home-desktop.jpg');
     }
 
 }
