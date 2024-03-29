@@ -1,45 +1,51 @@
-import React from 'react';
-import { Nav, Container, Navbar, NavbarBrand, NavbarToggle, Offcanvas } from 'react-bootstrap';
-import { NavLink } from 'react-router-dom';
+import React from "react";
+import { NavLink } from "react-router-dom";
+
 
 export default function Header() {
     return (
+
         <>
-            {[false].map((expand, idx) => (
-                <header className='bg-transparent'>
-                    <Navbar key={idx} expand={expand} className='bg-transparent mb-3 navbar-expand-md navbar-dark'>
-                        <Container fluid>
-                            <Navbar.Brand href='#'>
-                                <img src="/assets/shared/logo.svg" alt="company logo" />
-                            </Navbar.Brand>
-                            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
-                            <Navbar.Offcanvas id={`offcanvasNavbar-expand-${expand}`} className='bg-dark' aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`} placement='end'>
-                                <Offcanvas.Header closeButton />
-                                <Offcanvas.Body>
-                                    <Nav className='justify-content-end flex-grow-1 pe-3'>
-                                        <NavLink to='/home' id='home'>
-                                            <span>01</span>
-                                            <span>Home</span>
-                                        </NavLink>
-                                        <NavLink to='/destinations' id='destinations'>
-                                            <span>02</span>
-                                            <span>Destinations</span>
-                                        </NavLink>
-                                        <NavLink to='/crew' id='crew'>
-                                            <span>03</span>
-                                            <span>Crew</span>
-                                        </NavLink>
-                                        <NavLink to='/technology' id='technology'>
-                                            <span>04</span>
-                                            <span>Technology</span>
-                                        </NavLink>
-                                    </Nav>
-                                </Offcanvas.Body>
-                            </Navbar.Offcanvas>
-                        </Container>
-                    </Navbar>
-                </header>
-            ))}
+            <header className='page-header container-fluid'>
+                <div className="container-fluid">
+                    <nav className='bg-body-transparent mb-3 navbar-expand-md d-flex justify-content-between align-items-center py-2 pt-md-4'>
+                        <a href="#" className="navbar-brand">
+                            <img src="/public/assets/shared/logo.svg" alt="company logo" />
+                        </a>
+                        <button className='navbar-toggler' type='button' data-bs-toggle='offcanvas' data-bs-target='#offcanvasNavbar' aria-controls='offcanvasNavbar' aria-label='Toggle navigation'>
+                            <img src="/public/assets/shared/icon-hamburger.svg" alt="Menu open" />
+                        </button>
+                        <div className='offcanvas offcanvas-end w-75 bg-dark' tabIndex='2' id='offcanvasNavbar' aria-labelledby="offcanvasNavbarLabel">
+                            <div className='offcanvas-header'>
+                                <button type='button' className=" btn-close btn-close-white" data-bs-dismiss='offcanvas' aria-label='Close'>
+                                </button>
+                            </div>
+                            <div className='offcanvas-body container'>
+                                <ul className="navbar-nav justify-content-end flex-grow-1 ps-4 pe-5 gap-4 ">
+                                    <NavLink to='/home' className='nav-text text-uppercase d-inline-flex pe-1 justify-content-start align-items-start gap-5 gap-lg-2 text-decoration-none'>
+                                        <span className='d-md-none d-lg-block'>00</span>
+                                        <span>Home</span>
+                                    </NavLink>
+                                    <NavLink to='/destinations' className='nav-text text-uppercase d-inline-flex pe-1 justify-content-start align-items-start gap-5 gap-lg-2 text-decoration-none'>
+                                        <span className='d-md-none d-lg-block'>01</span>
+                                        <span>Destinations</span>
+                                    </NavLink>
+                                    <NavLink to='/crew' className='nav-text text-uppercase d-inline-flex pe-1 justify-content-start align-items-start gap-5 gap-lg-2 text-decoration-none'>
+                                        <span className='d-md-none d-lg-block'>02</span>
+                                        <span>Crew</span>
+                                    </NavLink>
+                                    <NavLink to='/technology' className='nav-text text-uppercase d-inline-flex pe-1 justify-content-start align-items-start gap-5 gap-lg-2 text-decoration-none'>
+                                        <span className='d-md-none d-lg-block'>03</span>
+                                        <span>Technology</span>
+                                    </NavLink>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </nav>
+                </div>
+            </header >
         </>
+
     );
 }

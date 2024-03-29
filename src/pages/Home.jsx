@@ -4,7 +4,7 @@ import React from 'react';
 
 export default function Home() {
     return (
-        <main className='main vh-100'>
+        <main className='home-main'>
             <section>
                 <div>
                     <h1>Hi Trista</h1>

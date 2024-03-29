@@ -10,7 +10,7 @@ const App = () => {
 
   return (
     <>
-      <main className='main vh-100'>
+      <main className='app-main'>
         <Header />
         <Home />
       </main>
