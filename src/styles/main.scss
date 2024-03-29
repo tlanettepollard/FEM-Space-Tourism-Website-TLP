@@ -10,9 +10,13 @@
 
 // Layout
 
+
 // Pages
 @import './pages/home';
 
 // Vendors
+// Bootstrap
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+// Normalize
 @import './vendors/normalize';

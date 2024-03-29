@@ -7,13 +7,26 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    outline: 1px solid gray;
+    //outline: 1px solid gray;
 }
 
 body {
     width: 100%;
-    max-height: 100vh;
+    height: 100vh;
     margin: auto;
+    background-image: url('/assets/home/background-home-mobile.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @include bp-tablet-up {
+        background-image: url('/assets/home/background-home-tablet.jpg');
+    }
+
+    @include bp-lg-up {
+        background-image: url('/assets/home/background-home-desktop.jpg');
+
+    }
 }
 
 ul,
@@ -21,4 +34,3 @@ li {
     list-style-type: none;
     text-decoration: none;
 }
-
