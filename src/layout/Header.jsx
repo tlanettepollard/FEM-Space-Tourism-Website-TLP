@@ -8,7 +8,7 @@ export default function Header() {
         <>
             <header className='page-header container-fluid'>
                 <div className="container-fluid">
-                    <nav className='bg-body-transparent mb-3 navbar-expand-md d-flex justify-content-between align-items-center py-2'>
+                    <nav className='bg-body-transparent mb-3 navbar-expand-md d-flex justify-content-between align-items-center py-2 pt-md-4'>
                         <a href="#" className="navbar-brand">
                             <img src="/public/assets/shared/logo.svg" alt="company logo" />
                         </a>
@@ -22,20 +22,20 @@ export default function Header() {
                             </div>
                             <div className='offcanvas-body container'>
                                 <ul className="navbar-nav justify-content-end flex-grow-1 ps-4 pe-5 gap-4 ">
-                                    <NavLink to='/home' className='nav-text text-uppercase d-inline-flex pe-1 justify-content-start align-items-start gap-5 text-decoration-none'>
-                                        <span className='d-md-none'>01</span>
+                                    <NavLink to='/home' className='nav-text text-uppercase d-inline-flex pe-1 justify-content-start align-items-start gap-5 gap-lg-2 text-decoration-none'>
+                                        <span className='d-md-none d-lg-block'>00</span>
                                         <span>Home</span>
                                     </NavLink>
-                                    <NavLink to='/destinations' className='nav-text text-uppercase d-inline-flex pe-1 justify-content-start align-items-start gap-5 text-decoration-none'>
-                                        <span className='d-md-none'>02</span>
+                                    <NavLink to='/destinations' className='nav-text text-uppercase d-inline-flex pe-1 justify-content-start align-items-start gap-5 gap-lg-2 text-decoration-none'>
+                                        <span className='d-md-none d-lg-block'>01</span>
                                         <span>Destinations</span>
                                     </NavLink>
-                                    <NavLink to='/crew' className='nav-text text-uppercase d-inline-flex pe-1 justify-content-start align-items-start gap-5 text-decoration-none'>
-                                        <span className='d-md-none'>03</span>
+                                    <NavLink to='/crew' className='nav-text text-uppercase d-inline-flex pe-1 justify-content-start align-items-start gap-5 gap-lg-2 text-decoration-none'>
+                                        <span className='d-md-none d-lg-block'>02</span>
                                         <span>Crew</span>
                                     </NavLink>
-                                    <NavLink to='/technology' className='nav-text text-uppercase d-inline-flex pe-1 justify-content-start align-items-start gap-5 text-decoration-none'>
-                                        <span className='d-md-none'>04</span>
+                                    <NavLink to='/technology' className='nav-text text-uppercase d-inline-flex pe-1 justify-content-start align-items-start gap-5 gap-lg-2 text-decoration-none'>
+                                        <span className='d-md-none d-lg-block'>03</span>
                                         <span>Technology</span>
                                     </NavLink>
                                 </ul>

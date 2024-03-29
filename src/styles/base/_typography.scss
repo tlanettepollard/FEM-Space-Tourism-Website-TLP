@@ -68,8 +68,11 @@ body {
 .nav-text {
     font-family: "Barlow Condensed",
         sans-serif;
-        font-size: 1rem;
+        font-size: .875rem;
         letter-spacing: 2.7;
         color: $nav-text-color;
+        @include bp-lg-up {
+            font-size: 1rem;
+        }
 
 }
