@@ -1,5 +1,18 @@
-.main {
+.home-page {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    background-image: url('/assets/home/background-home-mobile.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
-   
+    @include bp-tablet-up {
+        background-image: url('/assets/home/background-home-tablet.jpg');
+    }
 
+    @include bp-lg-up {
+        background-image: url('/assets/home/background-home-desktop.jpg');
+
+    }
 }
