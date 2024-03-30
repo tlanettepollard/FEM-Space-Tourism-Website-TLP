@@ -10,10 +10,10 @@ export default function Header() {
                 <div className="container-fluid">
                     <nav className='bg-body-transparent mb-3 navbar-expand-md d-flex justify-content-between align-items-center py-2 pt-md-4'>
                         <a href="#" className="navbar-brand">
-                            <img src="/public/assets/shared/logo.svg" alt="company logo" />
+                            <img src="/assets/shared/logo.svg" alt="company logo" />
                         </a>
                         <button className='navbar-toggler' type='button' data-bs-toggle='offcanvas' data-bs-target='#offcanvasNavbar' aria-controls='offcanvasNavbar' aria-label='Toggle navigation'>
-                            <img src="/public/assets/shared/icon-hamburger.svg" alt="Menu open" />
+                            <img src="/assets/shared/icon-hamburger.svg" alt="Menu open" />
                         </button>
                         <div className='offcanvas offcanvas-end w-75 bg-dark' tabIndex='2' id='offcanvasNavbar' aria-labelledby="offcanvasNavbarLabel">
                             <div className='offcanvas-header'>
