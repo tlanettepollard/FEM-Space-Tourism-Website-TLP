@@ -3,7 +3,7 @@ import Header from '../layout/Header';
 
 export default function Destinations() {
     return (
-        <div>
+        <div className='destination-page'>
         <Header />
             <h1>Destinations</h1>
         </div>
