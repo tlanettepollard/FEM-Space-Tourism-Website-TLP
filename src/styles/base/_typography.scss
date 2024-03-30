@@ -3,7 +3,7 @@
 
 
 
-body {
+.body-text {
     font-family: "Barlow Condensed", sans-serif;
     font-weight: 400;
     font-size: 1.125rem;
@@ -13,9 +13,12 @@ body {
 
 .header-1 {
     font-family: 'Bellefair', serif;
-    font-size: 9.375rem;
+    font-size: 5rem;
     color: $heading-text-color;
     text-transform: uppercase;
+    @include bp-tablet-up {
+        font-size: 9.375rem;
+    }
 }
 
 .header-2 {
