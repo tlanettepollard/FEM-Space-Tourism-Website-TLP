@@ -1,7 +1,9 @@
 import React from 'react';
 import { Route, Routes, Navigate, useParams } from 'react-router-dom';
 import Home from './pages/Home';
-import Destinations from './pages/Destination';
+import Destinations from './pages/Destinations';
+import Crew from './pages/Crew';
+
 import '../dist/css/main.css';
 
 
@@ -15,6 +17,7 @@ const App = () => {
           <React.Fragment>
             <Route path='home' element={<Home />} />
             <Route path='destinations' element={<Destinations />} />
+            <Route path='crew' element={<Crew />} />
           </React.Fragment>
         </Routes>
       </main>
