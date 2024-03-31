@@ -74,8 +74,8 @@
           "height": "712px"
         },
         "medium": {
-          "width": "456.37",
-          "height": "572"
+          "width": "456.37px",
+          "height": "572px"
         },
         "small": {
           "width": "327px",
@@ -91,6 +91,20 @@
         "png": "./assets/crew/image-mark-shuttleworth.png",
         "webp": "./assets/crew/image-mark-shuttleworth.webp"
       },
+      "size": {
+        "large": {
+          "width": "453.44px",
+          "height": "654px"
+        },
+        "medium": {
+          "width": "368.85px",
+          "height": "532px"
+        },
+        "small": {
+          "width": "327px",
+          "height": "223px"
+        }
+      },
       "role": "Mission Specialist",
       "bio": "Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist."
     },
@@ -100,6 +114,20 @@
         "png": "./assets/crew/image-victor-glover.png",
         "webp": "./assets/crew/image-victor-glover.webp"
       },
+      "size": {
+        "large": {
+          "width": "554.39px",
+          "height": "681px"
+        },
+        "medium": {
+          "width": "433.09px",
+          "height": "532px"
+        },
+        "small": {
+          "width": "327px",
+          "height": "223px"
+        }
+      },
       "role": "Pilot",
       "bio": "Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space Station. Glover is a commander in the U.S. Navy where he pilots an F/A-18.He was a crew member of Expedition 64, and served as a station systems flight engineer."
     },
@@ -108,6 +136,20 @@
       "images": {
         "png": "./assets/crew/image-anousheh-ansari.png",
         "webp": "./assets/crew/image-anousheh-ansari.webp"
+      },
+      "size": {
+        "large": {
+          "width": "615.57px",
+          "height": "607px"
+        },
+        "medium": {
+          "width": "539.51px",
+          "height": "532px"
+        },
+        "small": {
+          "width": "327px",
+          "height": "223px"
+        }
       },
       "role": "Flight Engineer",
       "bio": "Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space."
