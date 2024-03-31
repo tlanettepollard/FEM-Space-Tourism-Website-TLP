@@ -16,10 +16,10 @@ const App = () => {
       <main className='app-main'>
         <Routes>
           <React.Fragment>
-            <Route path='/' element={<Home />} />
-            <Route path='destinations' element={<Destinations />} />
-            <Route path='crew' element={<Crew />} />
-            <Route path='technology' element={<Technology />} />
+            <Route path='/home' element={<Home />} />
+            <Route path='/destinations' element={<Destinations />} />
+            <Route path='/crew' element={<Crew />} />
+            <Route path='/technology' element={<Technology />} />
           </React.Fragment>
         </Routes>
       </main>
