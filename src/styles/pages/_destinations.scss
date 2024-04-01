@@ -1,6 +1,6 @@
 .destination-page {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     margin: auto;
     background-image: url('/assets/destination/background-destination-mobile.jpg');
     background-size: cover;
@@ -16,13 +16,21 @@
 
     }
 
-    .image-container {
+    .dest-image-container {
         width: 100%;
         height: auto;
 
         img {
             width: 10.625rem;
             height: 10.625rem;
+            @include bp-tablet-up {
+                width: 18.75rem;
+                height: auto;
+            }
+            @include bp-lg-up {
+                width: 27.8125rem;
+                height: auto;
+            }
         }
 
     }
