@@ -8,11 +8,22 @@
     background-repeat: no-repeat;
 
     @include bp-tablet-up {
-        background-image: url('/assets/destination/background-technology-tablet.jpg');
+        background-image: url('/assets/technology/background-technology-tablet.jpg');
     }
 
     @include bp-lg-up {
-        background-image: url('/assets/destination/background-technology-desktop.jpg');
+        background-image: url('/assets/technology/background-technology-desktop.jpg');
 
     }
+
+        .technology-page-btn {
+            border: 1px solid $clr-white;
+            border-radius: 50%;
+            background: 0;
+            cursor: pointer;
+            width: clamp(2.5rem, 4.5vw, 5rem);
+            height: clamp(2.5rem, 4.5vw, 5rem);
+            text-align: center;
+            font-size: clamp(1.5rem, 1.75vw, 2rem)
+        }
 }

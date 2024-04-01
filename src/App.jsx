@@ -16,10 +16,10 @@ const App = () => {
     <div className='App'>
       <main className='app-main'>
         <Routes>
-          <Route index element={<Home />} />
+          <Route path='*' index element={<Home />} />
           <Route path='/destinations' element={<Destinations data={data.destinations} />} />
           <Route path='/crew' element={<Crew data={data.crew} />} />
-          <Route path='/technology' element={<Technology />} />
+          <Route path='/technology' element={<Technology data={data.technology} />} />
         </Routes>
       </main>
 

@@ -1,11 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Header from '../layout/Header';
+import { ButtonContainer } from '../components/ButtonContainer';
 
-export default function Technology() {
+export default function Technology({ data }) {
+    const [activeTab, setActiveTab] = useState(0);
+
     return (
-        <div className="technology-page">
+        <section className="technology-page">
             <Header />
-            <h1>Technology</h1>
-        </div>
+            <div className='d-flex flex-column justify-content-start align-items-center container'>
+                <h1 className='tech-page-title nav-text text-uppercase'>
+                    <span className='page-title-number nav-text opacity-25'>03</span> Space launch 101
+                </h1>
+                <article className='tech-image-container'>
+
+                </article>
+                <article className='tech-content container'>
+                    <ButtonContainer
+                        name={'technology'}
+                        data={data}
+                        activeTab={activeTab}
+                        setActiveTab={setActiveTab}
+                    />
+                </article>
+                
+            </div>
+
+        </section>
     );
 }
