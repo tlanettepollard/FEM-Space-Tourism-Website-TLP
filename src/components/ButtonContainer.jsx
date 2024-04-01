@@ -8,7 +8,7 @@ export const ButtonContainer = ({ data, name, activeTab, setActiveTab }) => {
             {data.map((element, index) => {
                 switch (name) {
                     case 'destinations':
-                        return <button key={index} className={`${name}-page-btn subheading-2 ${index === activeTab ? `${name}-active` : ""}`} onClick={() => changeContent(index)}>
+                        return <button key={index} className={`${name}-page-btn subheading-2 border-0 ${index === activeTab ? `${name}-active` : ""}`} onClick={() => changeContent(index)}>
                             {element.name}
                         </button>
                     case 'crew':

@@ -30,6 +30,14 @@ export default function Destinations({ data }) {
                     <p className='dest-text body-text text-center'>
                         {data[activeTab].description}
                     </p>
+                    <div className='dest-details borderTop pt-5'>
+                        <p className='dest-details-title subheading-2 text-center'>AVG. Temperature</p>
+                        <p className='dest-details-data text-center data-text'>{data[activeTab].distance}</p>
+                    </div>
+                    <div className='dest-details pt-5'>
+                        <p className='dest-details-title subheading-2 text-center'>Est. Travel Time</p>
+                        <p className='dest-details-data text-center data-text'>{data[activeTab].travel}</p>
+                    </div>
 
                 </article>
             </div>
