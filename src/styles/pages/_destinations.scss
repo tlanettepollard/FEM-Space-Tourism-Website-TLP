@@ -19,18 +19,12 @@
     .image-container {
         width: 100%;
         height: auto;
-        padding-inline: 6rem;
-        padding-bottom: 2rem;
-        @include bp-lg-up {
-            padding-inline: 0;
-            order 1;
-        }
-
 
         img {
             width: 10.625rem;
             height: 10.625rem;
         }
+
     }
 
 }
