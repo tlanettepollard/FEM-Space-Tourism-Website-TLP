@@ -16,14 +16,21 @@
 
     }
 
-        .technology-page-btn {
-            border: 1px solid $clr-white;
-            border-radius: 50%;
-            background: 0;
-            cursor: pointer;
-            width: clamp(2.5rem, 4.5vw, 5rem);
-            height: clamp(2.5rem, 4.5vw, 5rem);
-            text-align: center;
-            font-size: clamp(1.5rem, 1.75vw, 2rem)
+    .tech-image-container {
+        width: 100%;
+        height: auto;
+
+        @include bp-lg-up {
+            order: 2;
         }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+
+
+
 }
