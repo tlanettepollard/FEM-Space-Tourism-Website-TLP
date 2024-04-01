@@ -25,7 +25,13 @@ export default function Crew({ data }) {
                         activeTab={activeTab}
                         setActiveTab={setActiveTab}
                     />
+                    <div className='crew-text-content'>
+                        <h2 className='subheading-1 text-center crew-role'>{data[activeTab].role}</h2>
+                        <h3 className='subheading text-center crew-name'>{data[activeTab].name}</h3>
+                        <p className='crew-bio body-text text-center'>{data[activeTab].bio}</p>
+                    </div>
                 </article>
+
             </div>
         </section>
     );

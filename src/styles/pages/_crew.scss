@@ -27,4 +27,12 @@
 
 .img-fluid {
     width: 50% !important;
+
+    @include bp-tablet-up {
+        width: 70% !important;
+    }
+
+    @include bp-lg-up {
+        width: 100% !important;
+    }
 }
