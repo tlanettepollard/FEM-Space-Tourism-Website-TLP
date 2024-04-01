@@ -23,19 +23,19 @@ export default function Header() {
                             <div className='offcanvas-body container'>
                                 <ul className="navbar-nav justify-content-end flex-grow-1 ps-4 pe-5 gap-4 ">
                                     <NavLink to='/home' className='nav-text text-uppercase d-inline-flex pe-1 justify-content-start align-items-start gap-5 gap-lg-2 text-decoration-none'>
-                                        <span className='d-md-none d-lg-block'>00</span>
+                                        <span className='d-md-none d-lg-block fw-bold'>00</span>
                                         <span>Home</span>
                                     </NavLink>
                                     <NavLink to='/destinations' className='nav-text text-uppercase d-inline-flex pe-1 justify-content-start align-items-start gap-5 gap-lg-2 text-decoration-none'>
-                                        <span className='d-md-none d-lg-block'>01</span>
+                                        <span className='d-md-none d-lg-block fw-bold'>01</span>
                                         <span>Destinations</span>
                                     </NavLink>
                                     <NavLink to='/crew' className='nav-text text-uppercase d-inline-flex pe-1 justify-content-start align-items-start gap-5 gap-lg-2 text-decoration-none'>
-                                        <span className='d-md-none d-lg-block'>02</span>
+                                        <span className='d-md-none d-lg-block fw-bold'>02</span>
                                         <span>Crew</span>
                                     </NavLink>
                                     <NavLink to='/technology' className='nav-text text-uppercase d-inline-flex pe-1 justify-content-start align-items-start gap-5 gap-lg-2 text-decoration-none'>
-                                        <span className='d-md-none d-lg-block'>03</span>
+                                        <span className='d-md-none d-lg-block fw-bold'>03</span>
                                         <span>Technology</span>
                                     </NavLink>
                                 </ul>
