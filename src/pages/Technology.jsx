@@ -13,7 +13,10 @@ export default function Technology({ data }) {
                     <span className='page-title-number nav-text opacity-25'>03</span> Space launch 101
                 </h1>
                 <article className='tech-image-container'>
-
+                    <picture className='tech-img'>
+                        <source media="(min-width: 30rem)" srcSet={data[activeTab].images.portrait} />
+                        <img className='img-fluid mx-auto d-block' src={data[activeTab].images.landscape} alt={data[activeTab].name} />
+                    </picture>
                 </article>
                 <article className='tech-content container'>
                     <ButtonContainer
@@ -23,7 +26,7 @@ export default function Technology({ data }) {
                         setActiveTab={setActiveTab}
                     />
                 </article>
-                
+
             </div>
 
         </section>
