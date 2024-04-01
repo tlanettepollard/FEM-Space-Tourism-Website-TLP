@@ -13,7 +13,7 @@ export const ButtonContainer = ({ data, name, activeTab, setActiveTab }) => {
                         </button>
                     case 'crew':
                         return <button key={index} className={`${name}-page-btn text-uppercase ${index === activeTab ? `${name}-active` : ""}`} onClick={() => changeContent(index)} aria-label='Show crew member'>
-                            <div className='btn btn-circle btn-lg' aria-hidden='true'>
+                            <div className='btn-circle' aria-hidden='true'>
                             </div>
                         </button>
                     case 'technology':

@@ -12,3 +12,31 @@ img {}
     }
 
 }
+
+.crew-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-block: 2rem;
+
+    .crew-page-btn {
+        cursor: pointer;
+        background: none;
+        border: none;
+        opacity: .5;
+    }
+
+    .crew-page-btn.crew-active {
+        opacity: 1;
+    }
+
+    .btn-circle {
+        background: $clr-white;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        flex-shrink: 0;
+    }
+
+}

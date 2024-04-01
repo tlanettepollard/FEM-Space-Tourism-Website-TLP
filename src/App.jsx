@@ -19,7 +19,7 @@ const App = () => {
           <Route exact path='/FEM-Space-Tourism-Website-TLP' />
           <Route path='/home' element={<Home />} />
           <Route path='/destinations' element={<Destinations data={data.destinations} />} />
-          <Route path='/crew' element={<Crew />} />
+          <Route path='/crew' element={<Crew data={data.crew} />} />
           <Route path='/technology' element={<Technology />} />
         </Routes>
       </main>
