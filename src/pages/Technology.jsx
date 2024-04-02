@@ -26,6 +26,11 @@ export default function Technology({ data }) {
                         activeTab={activeTab}
                         setActiveTab={setActiveTab}
                     />
+                    <div className="tech-content-text">
+                        <h2 className='subheading-2 text-center'>The Terminology...</h2>
+                        <h3 className='subheading text-center tech-name'>{data[activeTab].name}</h3>
+                        <p className='body-text text-center tech-info'>{data[activeTab].description}</p>
+                    </div>
                 </article>
 
             </div>

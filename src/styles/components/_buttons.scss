@@ -48,7 +48,7 @@ img {}
     gap: 1rem;
     padding-block: 2rem;
 
-    @include bp-lg-up {
+    @media screen and (min-width: 993px) {
         flex-direction: column;
     }
 
