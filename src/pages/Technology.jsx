@@ -9,8 +9,8 @@ export default function Technology({ data }) {
         <section className="technology-page">
             <Header />
             <div className='d-flex flex-column justify-content-start align-items-center container'>
-                <h1 className='tech-page-title nav-text text-uppercase'>
-                    <span className='page-title-number nav-text opacity-25'>03</span> Space launch 101
+                <h1 className='tech-page-title nav-text text-uppercase pb-2'>
+                    <span className='page-title-number nav-text opacity-25 '>03</span> Space launch 101
                 </h1>
                 <article className='tech-image-container'>
                     <picture>
@@ -28,7 +28,7 @@ export default function Technology({ data }) {
                     />
                     <div className="tech-content-text">
                         <h2 className='subheading-2 text-center'>The Terminology...</h2>
-                        <h3 className='subheading text-center tech-name'>{data[activeTab].name}</h3>
+                        <h3 className='subheading text-center tech-name pb-2'>{data[activeTab].name}</h3>
                         <p className='body-text text-center tech-info'>{data[activeTab].description}</p>
                     </div>
                 </article>

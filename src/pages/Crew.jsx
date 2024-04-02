@@ -9,7 +9,7 @@ export default function Crew({ data }) {
         <section className='crew-page'>
             <Header />
             <div className='d-flex flex-column justify-content-start align-items-center container'>
-                <h1 className='crew-page-title nav-text text-uppercase'>
+                <h1 className='crew-page-title nav-text text-uppercase pb-2'>
                     <span className='page-title-number nav-text opacity-25'>02</span> Meet your crew
                 </h1>
                 <article className='crew-image-container'>
