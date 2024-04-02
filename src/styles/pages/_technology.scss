@@ -29,7 +29,13 @@
             height: auto;
         }
     }
-
+    .tech-content {
+        &-text {
+            .tech-info {
+                margin-inline: 2.1875rem;
+            }
+        }
+    }
 
 
 
