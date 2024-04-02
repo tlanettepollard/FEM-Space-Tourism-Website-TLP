@@ -10,7 +10,7 @@ export default function Destinations({ data }) {
         <section className='destination-page '>
             <Header />
             <div className='d-flex flex-column justify-content-start align-items-center container'>
-                <h1 className='dest-page-title nav-text text-uppercase'>
+                <h1 className='dest-page-title nav-text text-uppercase pb-3'>
                     <span className='page-title-number nav-text opacity-25'>01</span> Pick your destination
                 </h1>
                 <article className='dest-image-container pb-4'>
