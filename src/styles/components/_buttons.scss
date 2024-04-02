@@ -5,10 +5,16 @@ img {}
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    padding-bottom: 1.25rem;
 
 
     .destinations-page-btn {
         background-color: transparent;
+        padding-block: .625rem;
+    }
+
+    .destinations-page-btn.destinations-active {
+        border-bottom: 2px solid $clr-white !important;
     }
 
 }
