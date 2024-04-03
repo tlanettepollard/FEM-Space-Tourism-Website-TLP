@@ -7,6 +7,7 @@
         border-radius: 50%;
 
 
+
         @include bp-tablet-up {
             width: 15.125rem !important;
             height: 15.125rem !important;
@@ -39,9 +40,16 @@
         height: 100%;
         border-radius: 50%;
         left: 0;
+        opacity: 0;
+        transition: opacity 500ms linear, transform 500ms ease-in-out;
     }
 
-    
+    .btn-lg:hover::after,
+    .btn-lg:focus::after {
+        transform: scale(1.5);
+        opacity: 0.25;
+
+    }
 }
 
 .destinations-btn-container {
