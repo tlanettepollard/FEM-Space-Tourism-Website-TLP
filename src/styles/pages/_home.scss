@@ -15,4 +15,13 @@
         background-image: url('/assets/home/background-home-desktop.jpg');
 
     }
+
+    .home-main {
+       .home-content {
+        .home-text {
+            max-width: 444px;
+            height: auto;
+        }
+       } 
+    }
 }

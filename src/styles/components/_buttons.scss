@@ -1,10 +1,12 @@
 .home-btn-container {
     .btn-lg {
+        z-index: 1;
         width: 9.375rem !important;
         height: 9.375rem !important;
         place-items: center;
         border-radius: 50%;
-        font-family: 'Bellefair', serif;
+
+
 
         @include bp-tablet-up {
             width: 15.125rem !important;
@@ -15,6 +17,38 @@
             width: 17.125rem !important;
             height: 17.125rem !important;
         }
+
+        span {
+            font-family: 'Bellefair', serif;
+            font-size: 1.25rem;
+            letter-spacing: .0781rem;
+
+            @include bp-tablet-up {
+                font-size: 2rem;
+                letter-spacing: .125rem;
+            }
+        }
+    }
+
+    .btn-lg::after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        background: $clr-white;
+        opacity: .15;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        left: 0;
+        opacity: 0;
+        transition: opacity 500ms linear, transform 750ms ease-in-out;
+    }
+
+    .btn-lg:hover::after,
+    .btn-lg:focus::after {
+        transform: scale(1.5);
+        opacity: 0.25;
+
     }
 }
 
