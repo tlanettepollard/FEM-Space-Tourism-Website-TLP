@@ -1,4 +1,22 @@
-img {}
+.home-btn-container {
+    .btn-lg {
+        width: 9.375rem !important;
+        height: 9.375rem !important;
+        place-items: center;
+        border-radius: 50%;
+        font-family: 'Bellefair', serif;
+
+        @include bp-tablet-up {
+            width: 15.125rem !important;
+            height: 15.125rem !important;
+        }
+
+        @include bp-lg-up {
+            width: 17.125rem !important;
+            height: 17.125rem !important;
+        }
+    }
+}
 
 .destinations-btn-container {
     display: flex;
