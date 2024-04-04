@@ -17,11 +17,15 @@
     }
 
     .home-main {
-       .home-content {
-        .home-text {
-            max-width: 444px;
-            height: auto;
+        width: 100%;
+        height: 100%;
+
+        .home-content {
+
+            .home-text {
+                max-width: 444px;
+                height: auto;
+            }
         }
-       } 
     }
 }
