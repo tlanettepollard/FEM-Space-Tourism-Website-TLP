@@ -9,8 +9,8 @@ export default function Crew({ data }) {
         <section className='crew-page'>
             <Header />
             <div className='d-flex flex-column justify-content-start align-items-center container'>
-                <h1 className='crew-page-title nav-text text-uppercase pb-2'>
-                    <span className='page-title-number nav-text opacity-25'>02</span> Meet your crew
+                <h1 className='numbered-title nav-text text-uppercase pb-2'>
+                    <span aria-hidden='true' className='nav-text opacity-25'>02</span> Meet your crew
                 </h1>
                 <article className='crew-image-container'>
                     <picture className='crew-img'>
