@@ -34,7 +34,6 @@ li {
     column-gap: 2rem;
     grid-template-columns: 1;
     grid-template-rows: 2;
-    
 
     @include bp-lg-up {
         grid-template-columns: 2;
@@ -42,15 +41,14 @@ li {
     }
 }
 
-.grid-container>*:first-child {
 
+.grid-container>*:first-child {
     @include bp-lg-up {
         grid-column: 1;
     }
 }
 
 .grid-container>*:last-child {
-    
     @include bp-lg-up {
         grid-column: 3;
     }
