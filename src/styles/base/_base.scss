@@ -50,6 +50,7 @@ li {
 }
 
 .grid-container>*:last-child {
+    
     @include bp-lg-up {
         grid-column: 3;
     }
