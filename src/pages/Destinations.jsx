@@ -7,16 +7,17 @@ export default function Destinations({ data }) {
     const [activeTab, setActiveTab] = useState(0);
 
     return (
-        <section className='destination-page '>
+        <section className='destination-page container-fluid'>
             <Header />
-            <div className='d-flex flex-column justify-content-start align-items-center container'>
-                <h1 className='dest-page-title nav-text text-uppercase pb-3'>
-                    <span className='page-title-number nav-text opacity-25'>01</span> Pick your destination
-                </h1>
-                <article className='dest-image-container pb-4'>
+            <div className='grid-container container'>
+
+                <article className='dest-image-container align-self-center '>
+                    <h1 className='dest-page-title nav-text text-uppercase pb-3'>
+                        <p className='page-title-number nav-text text-center opacity-25'>01</p> Pick your destination
+                    </h1>
                     <picture className='destinations-img'>
-                        <source media="(min-width: 30rem)" srcSet={data[activeTab].images.png} />
-                        <img className='img-fluid mx-auto d-block' src={data[activeTab].images.webp} alt={data[activeTab].name} />
+                        <source media="(min-width: 992px)" srcSet={data[activeTab].images.webp} />
+                        <img className='img-fluid mx-auto d-block' src={data[activeTab].images.png} alt={data[activeTab].name} />
                     </picture>
                 </article>
                 <article className='container dest-content'>
