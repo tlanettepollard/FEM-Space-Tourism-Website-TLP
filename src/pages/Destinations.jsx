@@ -32,7 +32,7 @@ export default function Destinations({ data }) {
                             {data[activeTab].description}
                         </p>
                     </div>
-                    <div className='dest-details container  borderTop d-flex flex-column'>
+                    <div className='dest-details container  borderTop d-flex flex-column flex-md-row justify-content-md-evenly'>
                         <div>
                             <p className='dest-details-title subheading-2 text-center'>AVG. Temperature</p>
                             <p className='dest-details-data text-center data-text'>{data[activeTab].distance}</p>

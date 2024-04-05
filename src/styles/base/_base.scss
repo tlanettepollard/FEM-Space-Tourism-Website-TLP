@@ -42,64 +42,10 @@ picture {
     text-align: center;
     padding-inline: 1rem;
     padding-bottom: 4rem;
-    //grid-template-columns: 1;
-    //grid-template-rows: 2;
+    grid-template-columns: 1;
+    grid-template-rows: 2;
 }
 
 .grid-container p:not([className]) {
     max-width: 50ch;
-}
-
-.numbered-title {
-    grid-area: title;
-}
-
-// Destination Layout
-.grid-container--destination {
-    grid-template-areas:
-        'title'
-        'image'
-        'tabs'
-        'content';
-}
-
-.grid-container--destination>img {
-    grid-area: image;
-    max-width: 60%;
-}
-
-.grid-container--destination>.tab-list {
-    grid-area: tabs;
-}
-
-.grid-container--destination>.dest-info {
-    grid-area: content;
-}
-
-.dest-details {
-    padding-top: 2.5rem;
-    margin-top: 2.5rem;
-}
-
-// Crew layout
-
-.grid-container--crew {
-    grid-template-areas:
-        'title'
-        'image'
-        'tabs'
-        'content';
-}
-
-.grid-container--crew>img {
-    grid-area: image;
-    max-width: 60%;
-}
-
-.grid-container--crew>.dot-indicators {
-    grid-area: tabs;
-}
-
-.grid-container--crew>.crew-details {
-    grid-area: content;
 }
