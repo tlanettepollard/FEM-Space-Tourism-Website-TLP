@@ -10,7 +10,7 @@ export default function Home() {
         <div className='home-page'>
             <Header />
             <main className='home-main'>
-                <section className='grid-container container-fluid'>
+                <section className='grid-container grid-container--home container-fluid'>
                     <article className='home-content align-self-center align-content-xl-between mx-auto'>
                         <h1 className='header-5 text-uppercase text-center text-xl-start home-subheading'>So, you want to travel to</h1>
                         <h2 className='header-1 text-center text-xl-start home-title my-4'>Space</h2>
