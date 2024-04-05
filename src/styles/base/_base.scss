@@ -80,3 +80,26 @@ picture {
     padding-top: 2.5rem;
     margin-top: 2.5rem;
 }
+
+// Crew layout
+
+.grid-container--crew {
+    grid-template-areas:
+        'title'
+        'image'
+        'tabs'
+        'content';
+}
+
+.grid-container--crew>img {
+    grid-area: image;
+    max-width: 60%;
+}
+
+.grid-container--crew>.dot-indicators {
+    grid-area: tabs;
+}
+
+.grid-container--crew>.crew-details {
+    grid-area: content;
+}

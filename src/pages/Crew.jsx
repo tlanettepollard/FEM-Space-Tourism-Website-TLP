@@ -6,9 +6,9 @@ export default function Crew({ data }) {
     const [activeTab, setActiveTab] = useState(0);
 
     return (
-        <section className='crew-page'>
+        <section className='crew-page container-fluid'>
             <Header />
-            <div className='d-flex flex-column justify-content-start align-items-center container'>
+            <div className='grid-container grid-container--crew container'>
                 <h1 className='numbered-title nav-text text-uppercase pb-2'>
                     <span aria-hidden='true' className='nav-text opacity-25'>02</span> Meet your crew
                 </h1>
@@ -25,9 +25,11 @@ export default function Crew({ data }) {
                         activeTab={activeTab}
                         setActiveTab={setActiveTab}
                     />
-                    <div className='crew-text-content'>
-                        <h2 className='subheading-1 text-center crew-role'>{data[activeTab].role}</h2>
-                        <h3 className='subheading text-center crew-name'>{data[activeTab].name}</h3>
+                    <div className='crew-details'>
+                        <header>
+                            <h2 className='subheading-1 text-center crew-role'>{data[activeTab].role}</h2>
+                            <h3 className='subheading text-center crew-name'>{data[activeTab].name}</h3>
+                        </header>
                         <p className='crew-bio body-text text-center'>{data[activeTab].bio}</p>
                     </div>
                 </article>
