@@ -8,7 +8,7 @@ export default function Technology({ data }) {
     return (
         <section className="technology-page">
             <Header />
-            <div className='d-flex flex-column justify-content-start align-items-center container'>
+            <div className='technology-container container d-flex flex-column justify-content-start align-items-center container'>
                 <h1 className='numbered-title nav-text text-uppercase'>
                     <span aria-hidden='true' className='nav-text opacity-25 '>03</span> Space launch 101
                 </h1>

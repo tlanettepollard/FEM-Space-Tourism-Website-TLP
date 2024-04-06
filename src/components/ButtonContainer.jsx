@@ -4,7 +4,7 @@ export const ButtonContainer = ({ data, name, activeTab, setActiveTab }) => {
     }
 
     return (
-        <nav className={`${name}-btn-container tab-list`}>
+        <nav className={`${name}-btn-container button-list`}>
             {data?.map((item, index) => {
                 switch (name) {
                     case 'destinations':

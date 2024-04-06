@@ -9,16 +9,23 @@
     }
 }
 
-// Large screens 1200 px up
+// Small screens
 @mixin bp-lg-up {
-    @media only screen and (min-width: $bp-lg) {
+    @media only screen and (min-width: $bp-lg){
+        @content;
+    }
+}
+
+// Large screens 1200 px up
+@mixin bp-xl-up {
+    @media only screen and (min-width: $bp-xl) {
         @content;
     }
 }
 
 // XL screens 1400px up
-@mixin bp-xl-up {
-    @media only screen and (min-width: $bp-xl) {
+@mixin bp-xxl-up {
+    @media only screen and (min-width: $bp-xxl) {
         @content;
     }
 }

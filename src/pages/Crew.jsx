@@ -8,9 +8,9 @@ export default function Crew({ data }) {
     return (
         <section className='crew-page container-fluid'>
             <Header />
-            <div className='grid-container grid-container--crew container'>
-                <h1 className='numbered-title nav-text text-uppercase pb-2'>
-                    <span aria-hidden='true' className='nav-text opacity-25'>02</span> Meet your crew
+            <div className='crew-container container'>
+                <h1 className='numbered-title nav-text text-uppercase text-center pb-2'>
+                    <span aria-hidden='true' className='nav-text opacity-25 pe-2'>02</span> Meet your crew
                 </h1>
                 <article className='crew-image-container'>
                     <picture className='crew-img'>
@@ -30,7 +30,7 @@ export default function Crew({ data }) {
                             <h2 className='subheading-1 text-center crew-role'>{data[activeTab].role}</h2>
                             <h3 className='subheading text-center crew-name'>{data[activeTab].name}</h3>
                         </header>
-                        <p className='crew-bio body-text text-center'>{data[activeTab].bio}</p>
+                        <p className='crew-bio body-text text-center px-4'>{data[activeTab].bio}</p>
                     </div>
                 </article>
 
