@@ -11,7 +11,7 @@
         background-image: url('/assets/home/background-home-tablet.jpg');
     }
 
-    @include bp-lg-up {
+    @include bp-xl-up {
         background-image: url('/assets/home/background-home-desktop.jpg');
 
     }
@@ -20,12 +20,23 @@
         width: 100%;
         height: 100%;
 
-        .home-content {
+        .home-container {
 
-            .home-text {
-                max-width: 444px;
-                height: auto;
+            .home-content {
+
+                .home-text {
+                    max-width: 444px;
+                    height: auto;
+                }
+            }
+
+            .row {
+                @include bp-lg-up {
+                    height: 100vh !important;
+                }
             }
         }
     }
+
+
 }

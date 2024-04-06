@@ -1,6 +1,6 @@
 .destination-page {
     width: 100%;
-    min-height: 100vh;
+    height: auto;
     margin: auto;
     background-image: url('/assets/destination/background-destination-mobile.jpg');
     background-size: cover;
@@ -11,12 +11,12 @@
         background-image: url('/assets/destination/background-destination-tablet.jpg');
     }
 
-    @include bp-lg-up {
+    @include bp-xl-up {
         background-image: url('/assets/destination/background-destination-desktop.jpg');
 
     }
 
-    .dest-image-container {
+    .destination-image-container {
         width: 100%;
         height: auto;
 
@@ -41,8 +41,8 @@
         border-top: 1px solid $clr-slategray;
     }
 
-    .dest-content {
-        .dest-text {
+    .destination-content {
+        .destination-text {
             margin-inline: 2.1875rem;
         }
     }

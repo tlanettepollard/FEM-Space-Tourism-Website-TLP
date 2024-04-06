@@ -12,13 +12,8 @@
 
 body {
     width: 100%;
-    height: auto;
+    min-height: 100%;
     margin: auto;
-    min-height: 100vh;
-    display: grid;
-    grid-template-rows: min-content 1fr;
-    overflow-x: hidden;
-
 }
 
 ul,
@@ -33,37 +28,11 @@ picture {
     display: block;
 }
 
-
-// Grid Layout
-
-.grid-container {
-    width: 100%;
-    height: 100%;
-    display: grid;
-    text-align: center;
-    column-gap: 2rem;
-    grid-template-columns: 1;
-    grid-template-rows: 2;
-
+// Utility Classes
+.flow {
+    margin-top: 10%;
     @include bp-lg-up {
-        grid-template-columns: 2;
-        grid-template-rows: 1;
+        margin-top: 5%;
     }
+
 }
-
-
-// Home Layout
-.grid-container--home>*:first-child {
-    @include bp-lg-up {
-        grid-column: 1;
-    }
-}
-
-.grid-container--home>*:last-child {
-    @include bp-lg-up {
-        grid-column: 3;
-        align-self: center;
-    }
-}
-
-// Destination Layout

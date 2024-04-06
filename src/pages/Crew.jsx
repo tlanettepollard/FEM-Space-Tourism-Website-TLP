@@ -8,8 +8,8 @@ export default function Crew({ data }) {
     return (
         <section className='crew-page container-fluid'>
             <Header />
-            <div className='grid-container grid-container--crew container'>
-                <h1 className='numbered-title nav-text text-uppercase align-self-end pb-2'>
+            <div className='crew-container container'>
+                <h1 className='numbered-title nav-text text-uppercase text-center pb-2'>
                     <span aria-hidden='true' className='nav-text opacity-25 pe-2'>02</span> Meet your crew
                 </h1>
                 <article className='crew-image-container'>
