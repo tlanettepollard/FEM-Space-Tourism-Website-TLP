@@ -5,8 +5,8 @@ import Destinations from './pages/Destinations';
 import Crew from './pages/Crew';
 import Technology from './pages/Technology';
 import data from './data.json';
-
 import '../dist/css/main.css';
+
 
 
 const App = () => {
