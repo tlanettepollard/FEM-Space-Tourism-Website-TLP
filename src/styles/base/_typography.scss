@@ -165,3 +165,21 @@
     text-transform: uppercase;
 
 }
+
+.numbered-title {
+    font-family: "Barlow Condensed",
+        sans-serif;
+    font-size: 1rem;
+    letter-spacing: .1688rem;
+    color: $nav-text-color;
+
+    @include bp-tablet-up {
+        font-size: 1.25rem;
+        letter-spacing: .2109rem;
+    }
+
+    @include bp-lg-up {
+        font-size: 1.75rem;
+        letter-spacing: .2953rem;
+    }
+}
