@@ -24,12 +24,31 @@
 
     .crew-container {
         width: 100%;
-        height: 100vh;
+
+        @include bp-tablet-up {
+            height: 90vh;
+        }
 
         .crew-content {
+            .crew-btn-container {
+                @include bp-xl-up {
+                    justify-content: flex-start !important;
+                }
+            }
+
             .crew-details {
-                .px-md-5 {
-                    margin: 0 5.3125rem;
+                @include bp-tablet-up {
+                    
+                }
+
+                .crew-bio {
+                    @include bp-tablet-up {
+                        width: 68%;
+                    }
+
+                    @include bp-xl-up {
+                        width: 47%;
+                    }
                 }
             }
         }
