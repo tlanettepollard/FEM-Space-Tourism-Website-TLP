@@ -20,15 +20,20 @@
         width: 100%;
         height: auto;
 
-        @include bp-lg-up {
+        @include bp-xl-up {
             order: 2;
         }
 
         .tech-img {
             max-width: 100%;
             height: auto;
+
+            @include bp-tablet-up {
+                margin: auto;
+            }
         }
     }
+
     .tech-content {
         &-text {
             .tech-info {
