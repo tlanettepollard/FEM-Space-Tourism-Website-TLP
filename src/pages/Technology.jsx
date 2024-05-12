@@ -6,11 +6,11 @@ export default function Technology({ data }) {
     const [activeTab, setActiveTab] = useState(0);
 
     return (
-        <section className="technology-page">
+        <section className="technology-page container-fluid">
             <Header />
             <div className='technology-container container d-flex flex-column justify-content-start align-items-center container'>
-                <h1 className='numbered-title nav-text text-uppercase'>
-                    <span aria-hidden='true' className='nav-text opacity-25 '>03</span> Space launch 101
+                <h1 className='numbered-title nav-text text-uppercase text-center text-md-start w-100 container'>
+                    <span aria-hidden='true' className='numbered-text opacity-25 pe-2 '>03</span> Space launch 101
                 </h1>
                 <article className='tech-image-container'>
                     <picture>
