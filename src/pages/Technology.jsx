@@ -8,10 +8,10 @@ export default function Technology({ data }) {
     return (
         <section className="technology-page container-fluid">
             <Header />
-            <div className='technology-container container d-flex flex-column justify-content-start align-items-center container'>
-                <h1 className='numbered-title nav-text text-uppercase text-center text-md-start w-100 container'>
-                    <span aria-hidden='true' className='numbered-text opacity-25 pe-2 '>03</span> Space launch 101
-                </h1>
+            <h1 className='numbered-title nav-text text-uppercase text-center text-md-start w-100 container'>
+                <span aria-hidden='true' className='numbered-text opacity-25 pe-2 '>03</span> Space launch 101
+            </h1>
+            <div className='technology-container container d-flex flex-column flex-xl-row justify-content-start align-items-center container'>
                 <article className='tech-image-container'>
                     <picture>
                         <source media="(max-width: 992px"
@@ -19,7 +19,7 @@ export default function Technology({ data }) {
                         <img className='tech-img' src={data[activeTab].images.portrait} alt={`A ${data[activeTab].name}`} />
                     </picture>
                 </article>
-                <article className='tech-content container'>
+                <article className='tech-content container d-flex flex-column flex-xl-row'>
                     <ButtonContainer
                         name={'technology'}
                         data={data}
