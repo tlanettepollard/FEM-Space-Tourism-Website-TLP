@@ -36,9 +36,16 @@
 
     .tech-content {
         &-text {
+
             .tech-info {
-                margin-inline: 2.1875rem;
+                width: 20.4375rem;
+
+                @include bp-tablet-up {
+                    width: 28.625rem;
+                }
+
             }
+
         }
     }
 
