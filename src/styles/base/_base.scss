@@ -29,10 +29,10 @@ picture {
 }
 
 // Utility Classes
-.flow {
-    margin-top: 10%;
-    @include bp-lg-up {
-        margin-top: 5%;
+.flow > *:not(:first-child) {
+    margin-top: 1rem;
+    @include bp-tablet-up {
+        margin-top: 2rem;
     }
 
 }
