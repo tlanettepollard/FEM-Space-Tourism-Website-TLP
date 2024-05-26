@@ -1,19 +1,33 @@
 @import '../abstracts/variables';
 @import './typography';
 
+/* Reset */
+
 *,
 *::before,
 *::after {
-    padding: 0;
-    margin: 0;
     box-sizing: border-box;
     outline: 1px solid gray;
 }
 
+/* Body */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+    margin: 0;
+}
+
 body {
     width: 100%;
-    min-height: 100%;
-    margin: auto;
+    min-height: 100vh;
+    line-height: 1.5;
+    //margin: auto;
 }
 
 ul,
@@ -22,17 +36,26 @@ li {
     text-decoration: none;
 }
 
+/* Make images easier to work with */
 img,
 picture {
     max-width: 100%;
     display: block;
 }
 
-// Utility Classes
-.flow > *:not(:first-child) {
-    margin-top: 1rem;
-    @include bp-tablet-up {
-        margin-top: 2rem;
-    }
+/* Make forms easier to work with*/
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
 
+// Utility Classes
+.flow>*:not(:first-child) {
+    margin-top: var(--flow-space, 1rem);
+}
+
+.flow--space-small {
+    --flow-space: .75rem;
 }
