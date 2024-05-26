@@ -20,17 +20,17 @@
         width: 100%;
         height: auto;
 
-        img {
-            width: 10.625rem;
+        picture {
+            max-width: 100%;
             height: auto;
 
             @include bp-tablet-up {
-                width: 18.75rem !important;
+                max-width: 60% !important;
                 height: auto;
             }
 
-            @include bp-lg-up {
-                width: 27.8125rem !important;
+            @include bp-xl-up {
+                max-width: 40% !important;
                 height: auto;
             }
         }
