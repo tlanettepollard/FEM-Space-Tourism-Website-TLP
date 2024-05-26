@@ -8,7 +8,7 @@ export default function Crew({ data }) {
     return (
         <section className='crew-page container-fluid flow'>
             <Header />
-            <div className="crew-container container-xxl">
+            <div className="crew-container container-xxl flow">
                 <h1 className='numbered-title nav-text text-uppercase text-center text-md-start w-100 container'>
                     <span aria-hidden='true' className='numbered-title opacity-25'>02</span> Meet your crew
                 </h1>
