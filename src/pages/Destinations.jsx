@@ -9,14 +9,14 @@ export default function Destinations({ data }) {
     return (
         <section className='destination-page container-fluid'>
             <Header />
-            <div className='destination-container container'>
+            <div className='destination-container container-xxl'>
                 <h1 className='numbered-title nav-text text-uppercase text-center text-md-start w-100 container'>
                     <span aria-hidden='true' className='numbered-title opacity-25 pe-2
                     '>01</span> Pick your destination
                 </h1>
                 <article className='destination-image-container'>
-                    <picture className='destination-img'>
-                        <source media="(min-width: 992px)" srcSet={data[activeTab].images.webp} />
+                    <picture className='destination-img m-auto'>
+                        <source srcSet={data[activeTab].images.webp}  type='image/webp'/>
                         <img className='img-fluid mx-auto d-block pb-3' src={data[activeTab].images.png} alt={data[activeTab].name} />
                     </picture>
                 </article>
