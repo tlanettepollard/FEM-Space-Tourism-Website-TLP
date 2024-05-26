@@ -37,19 +37,9 @@
             }
 
             .crew-details {
-                @include bp-tablet-up {
-                    
-                }
+                @include bp-tablet-up {}
 
-                .crew-bio {
-                    @include bp-tablet-up {
-                        width: 68%;
-                    }
-
-                    @include bp-xl-up {
-                        width: 47%;
-                    }
-                }
+                .crew-bio {}
             }
         }
 
