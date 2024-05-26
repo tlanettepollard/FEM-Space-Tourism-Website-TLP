@@ -9,10 +9,10 @@ export default function Home() {
     return (
         <div className='home-page'>
             <Header />
-            <main className='home-main'>
-                <section className='home-container container-fluid min-vh-100 flow'>
+            <main className='home-main container-fluid'>
+                <section className='home-container container-xxl min-vh-100 flow'>
                     <div className="row justify-content-center">
-                        <article className='home-content mx-auto col-12 col-xl-6 pt-lg-5 container'>
+                        <article className='home-content mx-auto col-12 col-xl-6 pt-lg-5'>
                             <h1 className='header-5 text-uppercase text-center text-xl-start home-subheading'>So, you want to travel to</h1>
                             <h2 className='header-1 text-center text-xl-start home-title my-4'>Space</h2>
                             <p className='home-text text body-text text-center text-xl-start px-md-5 mx-auto'>Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!</p>
