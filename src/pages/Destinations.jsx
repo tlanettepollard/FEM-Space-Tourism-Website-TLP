@@ -9,7 +9,7 @@ export default function Destinations({ data }) {
     return (
         <section className='destination-page container-fluid'>
             <Header />
-            <div className='destination-container container-xxl'>
+            <div className='destination-container container-xxl flow'>
                 <h1 className='numbered-title nav-text text-uppercase text-center text-md-start w-100 container'>
                     <span aria-hidden='true' className='numbered-title opacity-25 pe-2
                     '>01</span> Pick your destination
