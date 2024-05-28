@@ -25,6 +25,9 @@ picture {
 
 p.body-text {
     max-width: 50ch;
+    @include bp-xl-up {
+        max-width: 65ch;
+    }
 }
 
 body {
@@ -69,7 +72,7 @@ select {
 }
 
 // Utility Classes
-.flow>*:not(:first-child) {
+.flow> *:where(:not(:first-child)) {
     margin-top: var(--flow-space, 1rem);
 }
 
