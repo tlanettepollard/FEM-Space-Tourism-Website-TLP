@@ -1,6 +1,7 @@
 .home-page {
     width: 100%;
-    min-height: 100vh;
+    //min-height: 100vh;
+    height: auto;
     margin: auto;
     background-image: url('/assets/home/background-home-mobile.jpg');
     background-size: cover;
@@ -23,9 +24,9 @@
         .home-container {
 
             .home-content {
+                height: 100%;
 
                 .home-text {
-                    max-width: 444px;
                     height: auto;
                 }
             }
