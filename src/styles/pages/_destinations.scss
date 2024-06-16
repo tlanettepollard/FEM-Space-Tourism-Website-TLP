@@ -16,41 +16,49 @@
     .destination-main {
         .destination-container {
             .row {
-                height: 100vh !important;
 
+                //height: 100vh;
                 .destination-image-container {
-                        width: 100%;
+                    width: 100%;
+                    height: auto;
+
+                    picture {
+                        max-width: 100%;
                         height: auto;
-                
-                        picture {
-                            max-width: 100%;
+
+                        @include bp-tablet-up {
+                            max-width: 60% !important;
                             height: auto;
-                
-                            @include bp-tablet-up {
-                                max-width: 60% !important;
-                                height: auto;
-                            }
-                
-                            @include bp-xl-up {
-                                max-width: 40% !important;
-                                height: auto;
-                            }
                         }
-                
+
+                        @include bp-xl-up {
+                            max-width: 40% !important;
+                            height: auto;
+                        }
                     }
+
+                }
             }
-            
+
+            .destination-content {
+                min-height: 85vh;
+                .destination-info {
+
+
+                    .destination-text {
+                        width: 38ch;
+
+                    }
+                }
+            }
+
         }
     }
-    
+
 
     .borderTop {
         border-top: 1px solid $clr-slategray;
     }
 
-    .destination-content {
-        .destination-text {
-            width: 38ch;
-        }
-    }
+
 }
