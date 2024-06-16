@@ -33,7 +33,7 @@ export default function Destinations({ data }) {
                                 activeTab={activeTab}
                                 setActiveTab={setActiveTab}
                             />
-                            <div className='destination-info'>
+                            <div className='destination-info w-100'>
                                 <h3 className='dest-title header-3 fw-normal text-center'>{data[activeTab].name}</h3>
                                 <p className='destination-text body-text text-center m-auto'>
                                     {data[activeTab].description}
