@@ -16,7 +16,7 @@
     .destination-main {
         .destination-container {
             .row {
-                min-height: 100vh;
+                //height: 100vh;
                 .destination-image-container {
                         width: 100%;
                         height: auto;
@@ -39,11 +39,13 @@
                     }
             }
 
-                        .destination-content {
-                            .destination-text {
-                                width: 38ch;
-                            }
-                        }
+            .destination-content {
+                min-height: 85vh;
+
+                .destination-text {
+                    width: 38ch;
+                }
+            }
             
         }
     }

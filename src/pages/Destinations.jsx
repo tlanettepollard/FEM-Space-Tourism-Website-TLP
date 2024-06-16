@@ -11,9 +11,9 @@ export default function Destinations({ data }) {
             <Header />
             <main className='destination-main w-100 h-auto'>
                 <section className='destination-container container-xxl d-flex flex-column'>
-                    <div className='row'>
+                    <div className='row align-content-between'>
                         <div className='destination-intro col-12 col-xl-6'>
-                            <h1 className='numbered-title nav-text text-uppercase text-center text-md-start w-100 container'>
+                            <h1 className='numbered-title nav-text text-uppercase text-center text-md-start container'>
                                 <span aria-hidden='true' className='numbered-title opacity-25 pe-2
                     '>01</span> Pick your destination
                             </h1>
@@ -26,7 +26,7 @@ export default function Destinations({ data }) {
                             </article>
                         </div>
 
-                        <article className='container destination-content col-12 col-xl-6'>
+                        <article className='container destination-content col-12 col-xl-6 d-flex flex-column justify-content-evenly'>
                             <ButtonContainer
                                 name={'destinations'}
                                 data={data}
@@ -40,7 +40,7 @@ export default function Destinations({ data }) {
                                 </p>
                             </div>
                             <div className='destination-details container borderTop'>
-                                <div>
+                                <div className='pt-4'>
                                     <p className='details-title subheading-2 text-center'>AVG. Temperature</p>
                                     <p className='details-data text-center data-text'>{data[activeTab].distance}</p>
                                 </div>
