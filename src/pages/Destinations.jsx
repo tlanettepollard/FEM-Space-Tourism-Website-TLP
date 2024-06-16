@@ -10,7 +10,7 @@ export default function Destinations({ data }) {
         <section className='destination-page container-fluid w-100 min-vh-100 m-auto'>
             <Header />
             <main className='destination-main w-100 h-auto'>
-                <section className='destination-container container-xxl'>
+                <section className='destination-container container-xxl d-flex flex-column'>
                     <div className='row'>
                         <div className='destination-intro col-12 col-xl-6'>
                             <h1 className='numbered-title nav-text text-uppercase text-center text-md-start w-100 container'>

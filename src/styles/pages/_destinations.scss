@@ -16,8 +16,7 @@
     .destination-main {
         .destination-container {
             .row {
-                height: 100vh !important;
-
+                min-height: 100vh;
                 .destination-image-container {
                         width: 100%;
                         height: auto;
