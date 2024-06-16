@@ -38,6 +38,12 @@
                 
                     }
             }
+
+                        .destination-content {
+                            .destination-text {
+                                width: 38ch;
+                            }
+                        }
             
         }
     }
@@ -47,9 +53,5 @@
         border-top: 1px solid $clr-slategray;
     }
 
-    .destination-content {
-        .destination-text {
-            width: 38ch;
-        }
-    }
+    
 }
