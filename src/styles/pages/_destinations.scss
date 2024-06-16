@@ -1,7 +1,4 @@
 .destination-page {
-    width: 100%;
-    min-height: 100vh;
-    margin: auto;
     background-image: url('/assets/destination/background-destination-mobile.jpg');
     background-size: cover;
     background-position: center;
@@ -42,8 +39,10 @@
     }
 
     .destination-content {
+        min-height: 90vh;
+        
         .destination-text {
-            margin-inline: 2.1875rem;
+            width: 38ch;
         }
     }
 }
