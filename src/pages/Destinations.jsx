@@ -10,8 +10,8 @@ export default function Destinations({ data }) {
         <section className='destination-page container-fluid w-100 min-vh-100 m-auto'>
             <Header />
             <main className='destination-main w-100 h-auto'>
-                <section className='destination-container container-xxl d-flex flex-column'>
-                    <div className='row align-content-between'>
+                <section className='destination-container container-xxl'>
+                    <div className='row'>
                         <div className='destination-intro col-12 col-xl-6'>
                             <h1 className='numbered-title nav-text text-uppercase text-center text-md-start container'>
                                 <span aria-hidden='true' className='numbered-title opacity-25 pe-2
@@ -21,12 +21,12 @@ export default function Destinations({ data }) {
                             <article className='destination-image-container'>
                                 <picture className='destination-img m-auto'>
                                     <source srcSet={data[activeTab].images.webp} type='image/webp' />
-                                    <img className='img-fluid mx-auto d-block pb-3' src={data[activeTab].images.png} alt={data[activeTab].name} />
+                                    <img className='img-fluid mx-auto d-block' src={data[activeTab].images.png} alt={data[activeTab].name} />
                                 </picture>
                             </article>
                         </div>
 
-                        <article className='container destination-content col-12 col-xl-6 d-flex flex-column justify-content-evenly'>
+                        <article className='container destination-content col-12 col-xl-6'>
                             <ButtonContainer
                                 name={'destinations'}
                                 data={data}
@@ -40,13 +40,13 @@ export default function Destinations({ data }) {
                                 </p>
                             </div>
                             <div className='destination-details container borderTop'>
-                                <div className='pt-4'>
-                                    <p className='details-title subheading-2 text-center'>AVG. Temperature</p>
-                                    <p className='details-data text-center data-text'>{data[activeTab].distance}</p>
+                                <div className=''>
+                                    <p className='details-title subheading-2 text-center text-xxl-start'>AVG. Temperature</p>
+                                    <p className='details-data text-center text-xxl-start data-text'>{data[activeTab].distance}</p>
                                 </div>
                                 <div>
-                                    <p className='details-title subheading-2 text-center'>Est. Travel Time</p>
-                                    <p className='details-data text-center data-text'>{data[activeTab].travel}</p>
+                                    <p className='details-title subheading-2 text-center text-xxl-start'>Est. Travel Time</p>
+                                    <p className='details-data text-center text-xxl-start data-text'>{data[activeTab].travel}</p>
                                 </div>
                             </div>
                         </article>

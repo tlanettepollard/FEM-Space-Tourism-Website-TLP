@@ -17,10 +17,7 @@
         .destination-container {
             .row {
 
-                //height: 100vh;
                 .destination-image-container {
-                    width: 100%;
-                    height: auto;
 
                     picture {
                         max-width: 100%;
@@ -31,8 +28,8 @@
                             height: auto;
                         }
 
-                        @include bp-xl-up {
-                            max-width: 40% !important;
+                        @include bp-xxl-up {
+                            max-width: 84% !important;
                             height: auto;
                         }
                     }
