@@ -12,7 +12,7 @@ export default function Destinations({ data }) {
             <main className='destination-main w-100 h-auto'>
                 <section className='destination-container container-xxl d-flex flex-column'>
                     <div className='row align-content-between'>
-                        <div className='destination-intro col-12 col-xl-6'>
+                        <div className='destination-intro col-12 col-xl-6 d-xxl-flex  flex-xxl-column justify-content-xxl-around'>
                             <h1 className='numbered-title nav-text text-uppercase text-center text-md-start container'>
                                 <span aria-hidden='true' className='numbered-title opacity-25 pe-2
                     '>01</span> Pick your destination
@@ -39,14 +39,14 @@ export default function Destinations({ data }) {
                                     {data[activeTab].description}
                                 </p>
                             </div>
-                            <div className='destination-details container borderTop'>
-                                <div className='pt-4'>
-                                    <p className='details-title subheading-2 text-center'>AVG. Temperature</p>
-                                    <p className='details-data text-center data-text'>{data[activeTab].distance}</p>
+                            <div className='destination-details container borderTop d-xxl-flex align-items-xxl-center justify-content-xxl-around'>
+                                <div className='pt-4 pt-xxl-0'>
+                                    <p className='details-title subheading-2 text-center text-xxl-start'>AVG. Temperature</p>
+                                    <p className='details-data text-center text-xxl-start data-text'>{data[activeTab].distance}</p>
                                 </div>
                                 <div>
-                                    <p className='details-title subheading-2 text-center'>Est. Travel Time</p>
-                                    <p className='details-data text-center data-text'>{data[activeTab].travel}</p>
+                                    <p className='details-title subheading-2 text-center text-xxl-start'>Est. Travel Time</p>
+                                    <p className='details-data text-center text-xxl-start data-text'>{data[activeTab].travel}</p>
                                 </div>
                             </div>
                         </article>
