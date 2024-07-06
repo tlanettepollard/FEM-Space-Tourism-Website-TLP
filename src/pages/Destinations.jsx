@@ -11,8 +11,8 @@ export default function Destinations({ data }) {
             <Header />
             <main className='destination-main w-100 h-auto'>
                 <section className='destination-container container-xxl'>
-                    <div className='row'>
-                        <div className='destination-intro col-12 col-xl-6'>
+                    <div className='row align-items-xl-center'>
+                        <div className='destination-intro col-12 col-xl-6 d-xl-flex flex-xl-column justify-content-xl-evenly'>
                             <h1 className='numbered-title nav-text text-uppercase text-center text-md-start container'>
                                 <span aria-hidden='true' className='numbered-title opacity-25 pe-2
                     '>01</span> Pick your destination
@@ -26,14 +26,14 @@ export default function Destinations({ data }) {
                             </article>
                         </div>
 
-                        <article className='container destination-content col-12 col-xl-6 d-flex flex-column justify-content-evenly justify-content-md-evenly align-items-center'>
+                        <article className='container destination-content col-12 col-xl-4 d-flex flex-column justify-content-evenly justify-content-md-evenly align-items-center'>
                             <ButtonContainer
                                 name={'destinations'}
                                 data={data}
                                 activeTab={activeTab}
                                 setActiveTab={setActiveTab}
                             />
-                            <div className='destination-info w-100 pb-3'>
+                            <div className='destination-info w-100 pb-3 mb-xl-5'>
                                 <h3 className='dest-title header-3 fw-normal text-center text-xl-start'>{data[activeTab].name}</h3>
                                 <p className='destination-text body-text text-center text-xl-start m-auto ms-xl-0'>
                                     {data[activeTab].description}
