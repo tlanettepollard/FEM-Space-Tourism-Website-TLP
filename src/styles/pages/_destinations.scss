@@ -16,7 +16,7 @@
     .destination-main {
         .destination-container {
             .row {
-
+                
                 .destination-image-container {
 
                     picture {
@@ -43,14 +43,25 @@
             }
 
             .destination-content {
-                min-height: 85vh;
+                height: 80vh;
+                @include bp-tablet-up {
+                height: 50vh;
+                }
+                @include bp-xl-up {
+                    height: 65vh;
+                }
                 .destination-info {
-
-
                     .destination-text {
                         width: 38ch;
+                        @include bp-tablet-up {
+                            width: 65ch;
+                        }
 
                     }
+                }
+
+                 .destination-details {
+                     
                 }
             }
 

@@ -19,29 +19,29 @@ export default function Destinations({ data }) {
                             </h1>
 
                             <article className='destination-image-container'>
-                                <picture className='destination-img m-auto'>
+                                <picture className='destination-img m-auto pt-3'>
                                     <source srcSet={data[activeTab].images.webp} type='image/webp' />
                                     <img className='img-fluid mx-auto d-block' src={data[activeTab].images.png} alt={data[activeTab].name} />
                                 </picture>
                             </article>
                         </div>
 
-                        <article className='container destination-content col-12 col-xl-6'>
+                        <article className='container destination-content col-12 col-xl-6 d-flex flex-column justify-content-evenly justify-content-md-evenly align-items-center'>
                             <ButtonContainer
                                 name={'destinations'}
                                 data={data}
                                 activeTab={activeTab}
                                 setActiveTab={setActiveTab}
                             />
-                            <div className='destination-info w-100'>
-                                <h3 className='dest-title header-3 fw-normal text-center'>{data[activeTab].name}</h3>
-                                <p className='destination-text body-text text-center m-auto'>
+                            <div className='destination-info w-100 pb-3'>
+                                <h3 className='dest-title header-3 fw-normal text-center text-xl-start'>{data[activeTab].name}</h3>
+                                <p className='destination-text body-text text-center text-xl-start m-auto ms-xl-0'>
                                     {data[activeTab].description}
                                 </p>
                             </div>
-                            <div className='destination-details container borderTop'>
-                                <div className=''>
-                                    <p className='details-title subheading-2 text-center text-xxl-start'>AVG. Temperature</p>
+                            <div className='destination-details container borderTop d-md-flex justify-content-md-around justify-content-xl-start w-100 pt-4'>
+                                <div>
+                                    <p className='details-title subheading-2 text-center text-xxl-start'>AVG. Distance</p>
                                     <p className='details-data text-center text-xxl-start data-text'>{data[activeTab].distance}</p>
                                 </div>
                                 <div>
