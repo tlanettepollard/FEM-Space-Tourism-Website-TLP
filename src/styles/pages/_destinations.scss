@@ -10,36 +10,42 @@
 
     @include bp-xl-up {
         background-image: url('/assets/destination/background-destination-desktop.jpg');
+       
 
     }
 
     .destination-main {
         .destination-container {
             .row {
-                
-                .destination-image-container {
-
-                    picture {
-                        width: 100%;
-                        height: auto;
-
-                        @include bp-tablet-up {
-                            width: 60% !important;
-                            height: auto;
-                        }
-
-                        @include bp-lg-up {
-                            width: 50% !important;
-                            height: auto;
-                        }
-
-                        @include bp-xxl-up {
-                            width: 84% !important;
-                            height: auto;
-                        }
+                min-height: 90vh;
+                .destination-intro {
+                    @include bp-xl-up {
+                    min-height: 90vh !important;
                     }
+                    .destination-image-container {
 
-                }
+                        picture {
+                            width: 100%;
+                            height: auto;
+
+                            @include bp-tablet-up {
+                                width: 60% !important;
+                                height: auto;
+                            }
+
+                            @include bp-lg-up {
+                                width: 50% !important;
+                                height: auto;
+                            }
+
+                            @include bp-xxl-up {
+                                width: 84% !important;
+                                height: auto;
+                            }
+                        }
+
+                    }
+                 }
             }
 
             .destination-content {
@@ -54,7 +60,7 @@
                     .destination-text {
                         width: 38ch;
                         @include bp-tablet-up {
-                            width: 65ch;
+                            width: 43ch;
                         }
 
                     }
@@ -66,7 +72,7 @@
                     }
                     @include bp-xl-up {
                     padding-inline-start: 0rem;
-                     gap: 7.5rem;
+                     gap: 6.25rem;
                     }
                 }
             }
