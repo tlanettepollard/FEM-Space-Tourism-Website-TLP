@@ -39,7 +39,7 @@ export default function Destinations({ data }) {
                                     {data[activeTab].description}
                                 </p>
                             </div>
-                            <div className='destination-details container borderTop d-md-flex justify-content-md-around justify-content-xl-start w-100 pt-4'>
+                            <div className='destination-details container borderTop d-md-flex justify-content-md-center justify-content-xl-start w-100 pt-4'>
                                 <div>
                                     <p className='details-title subheading-2 text-center text-xxl-start'>AVG. Distance</p>
                                     <p className='details-data text-center text-xxl-start data-text'>{data[activeTab].distance}</p>
