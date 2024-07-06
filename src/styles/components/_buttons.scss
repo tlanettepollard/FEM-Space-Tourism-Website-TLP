@@ -60,6 +60,11 @@
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
 
+    @include bp-xl-up {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
 
     .destinations-page-btn {
         background-color: transparent;

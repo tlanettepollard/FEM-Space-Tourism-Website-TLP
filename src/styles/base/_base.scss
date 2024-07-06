@@ -23,12 +23,6 @@ picture {
     margin: 0;
 }
 
-p.body-text {
-    max-width: 50ch;
-    @include bp-xl-up {
-        max-width: 65ch;
-    }
-}
 
 body {
     width: 100%;
