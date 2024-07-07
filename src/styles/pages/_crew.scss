@@ -22,26 +22,31 @@
         padding-top: .625rem;
     }
 
-    .crew-container {
-        width: 100%;
-
+    .crew-container {   
         @include bp-tablet-up {
             height: 90vh;
         }
 
         .crew-content {
-            .crew-btn-container {
-                @include bp-xl-up {
-                    justify-content: flex-start !important;
+            @include bp-tablet-up {
+                height: 88vh;
+            }
+            .crew-information {
+                .crew-btn-container {
+                    @include bp-xl-up {
+                        justify-content: flex-start !important;
+                    }
+                }
+
+                .crew-details {
+                    @include bp-tablet-up {}
+
+                    .crew-bio {
+                        width: 45ch;
+                    }
                 }
             }
-
-            .crew-details {
-                @include bp-tablet-up {}
-
-                .crew-bio {}
-            }
-        }
+         }
 
     }
 
