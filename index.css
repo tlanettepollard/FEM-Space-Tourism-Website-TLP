@@ -115,7 +115,6 @@ select {
 
 .flow > *:where(:not(:first-child)) {
 	margin-top: var(--flow-space, 1rem);
-	outline: 1px solid red;
 }
 
 .container {
@@ -148,6 +147,7 @@ select {
 	width: 1px;
 	height: 1px;
 	padding: 0;
+	margin: -1px;
 	overflow: hidden;
 	clip: rect(0, 0, 0, 0);
 	white-space: nowrap; /* added line*/
@@ -252,7 +252,7 @@ select {
 
 .large-button {
 	position: relative;
-	display: grid;
+	display: inline-grid;
 	z-index: 1;
 	place-items: center;
 	padding: 0 2em;
