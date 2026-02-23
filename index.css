@@ -129,9 +129,18 @@ select {
 	gap: var(--gap, 1rem);
 }
 
+.flex.even-columns > * {
+	width: 100%;
+	outline: 1px solid limegreen;
+}
+
 .grid {
 	display: grid;
 	gap: var(--gap, 1rem);
+}
+
+.d-block {
+	display: block;
 }
 
 .flow > *:where(:not(:first-child)) {
@@ -293,7 +302,7 @@ select {
 	z-index: -1;
 	width: 100%;
 	height: 100%;
-	background: hsl(var(--clr-white) / 0.15);
+	background: hsl(var(--clr-white) / 0.1);
 	border-radius: 50%;
 	opacity: 0;
 	transition:
